@@ -1,15 +1,16 @@
 {
-    "version": 2,
-    "name" : "Shop-Now",
-    "builds": [
-      { 
-      "src": "index.html", 
-      "use": "@vercel/static" 
-    }
+    "version" : 2,
+    "name" : "Full Stack",
+    "builds" : [
+        {
+            "src" : "./index.js",
+            "use" : "@vercel/node"
+        }
     ],
-    "routes": [
-      { "src": "/api/(.*)", 
-      "dest": "/" }
+    "routes" : [
+        {
+            "src" : "/(.*)",
+            "dest" : "/"
+        }
     ]
-  }
-  
+}
